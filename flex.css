@@ -1,0 +1,150 @@
+.card{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 3rem 0;
+  border-bottom: 1px solid #ccc; 
+  gap:0;
+  align-items: center;
+  
+}
+h2{
+  font-size: 1.2rem;
+  margin: 0;
+  
+}
+h1{
+  font-size: 1.4rem;
+  font-family: "Libre Franklin", sans-serif;
+
+}
+.card img{
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.cart p{
+  margin: 0;
+}
+.card:last-child{
+  border:none
+}
+.feature img{
+  grid-column:1/3;
+  grid-row: 2/3
+  
+}
+.feature p:not(:has(a)){
+  display: none
+}
+.feature p:last-child{
+  grid-row:3/4;
+  margin-top: 2rem;
+}
+/* extremely basic formatting */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.card-container {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.button {
+  background-color: #2D697C;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.button:hover {
+  background-color: #327c94;
+}
+
+@media(min-width: 500px){
+  .card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-row: repeat(3, 1fr);
+    padding: 10px;
+
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .button{
+    grid-row: 3/4;
+    
+  }
+  .card img{
+    grid-column:1/2;
+    grid-row: 2/3;
+  }
+  .feature{
+    grid-column:1/3;
+  }
+ .card-container{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+  }
+  .feature p:not(:has(a)){
+  display: block;
+    grid-row: 3/3;
+}
+  h2{
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+  .card:last-child{
+  border: 1px solid #ccc;
+}
+  .feature{
+    display: block;
+  }
+  @media(min-width: 700px){
+    .card-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .feature{
+      grid-column: 1/4;
+    }
+  
+  }
+  
+  @media(min-width:1000px){
+    .card-container{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+   
+    .card{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+    }
+    .card img{
+      grid-column:2/3;
+      grid-row: 1/3
+    }
+    
+         .feature{
+      grid-column: 1/3;
+      grid-row: 1/4;
+         display: block;
+    }
+    h1{
+       max-width: 1200px;
+      margin: 3rem auto 2rem auto;
+    }
+  }}
