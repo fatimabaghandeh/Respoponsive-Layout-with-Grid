@@ -1,4 +1,4 @@
-![Screenshot (556)](https://github.com/user-attachments/assets/f680e206-d1fd-4421-b10b-c2eaa05df5a8)# Responsive Layout with CSS Grid
+# Responsive Layout with CSS Grid
 
 Welcome to the **Responsive Layout with CSS Grid** project! This is a modern, adaptable web layout built purely with CSS Grid, demonstrating clean design principles that respond effortlessly to any screen size.
 
